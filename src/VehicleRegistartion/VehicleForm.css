@@ -1,0 +1,39 @@
+.repair_loan {
+    background-color: silver;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1em;
+}
+
+.vehicleForm_header {
+    display: flex;
+}
+
+.btn_continue {
+    border-radius: 2em !important;
+}
+
+.vehicleForm {
+    width: 33%;
+    background-color: #ffffff;
+    border-radius: 2%;
+    padding: 2em !important;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    box-shadow: 0 0 25px #ccc;
+}
+
+.condition {
+    text-align: left;
+}
+
+.maxloan {
+    background-color: #edfbf9 !important;
+}
+
+.maxloan>p {
+    color: #81e0cf
+}

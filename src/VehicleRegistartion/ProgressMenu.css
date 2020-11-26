@@ -1,0 +1,28 @@
+.progress_menu_container {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    background-color: #ffffff;
+    z-index: 1;
+    padding: 0em 1em 0 1em;
+}
+
+.progress_items {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 !important;
+}
+
+.step_counter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.vehicle {
+    font-weight: bolder;
+}
+
+.progress_bar {
+    height: 2px;
+    background-color: green;
+}
+
