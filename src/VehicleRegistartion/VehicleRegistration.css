@@ -1,4 +1,5 @@
-.main_container {
-    background-color: #f3f3f3;
-    z-index: -1;
-}
+.form_main_container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}   

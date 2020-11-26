@@ -3,8 +3,8 @@ import { CheckboxProps, DropdownProps, InputOnChangeData } from 'semantic-ui-rea
 import { modelList, trimList, yearList } from './helperFunctions'
 import { IProgressBarItem, ProgressMenu } from './ProgressMenu'
 import { IVehicleFormItems, VehicleForm } from './VehicleForm'
-import { vehicleRegistrationApi } from './VehicleRegistrationApi'
 import './VehicleRegistration.css'
+import { vehicleRegistrationApi } from './VehicleRegistrationApi'
 
 export interface IndexableObject {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -78,7 +78,9 @@ export const VehicleRegistartion = (): React.ReactElement => {
   return (
     <div className='main_container'>
       <ProgressMenu items={progressBarItems} />
-      <VehicleForm items={vehicleFormItems} vehicleData={vehicleData} onClick={handleContinueClick}/>
+      <div className='form_main_container'>
+        <VehicleForm items={vehicleFormItems} vehicleData={vehicleData} onClick={handleContinueClick}/>
+      </div>
     </div>
   )
 }

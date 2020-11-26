@@ -5,7 +5,7 @@ import { VehicleRegistartion } from './VehicleRegistartion/VehicleRegistration'
 export const App = (): React.ReactElement => {
 
   return (
-    <div className="App">
+    <div className='App'>
       <VehicleRegistartion/>
     </div>
   )

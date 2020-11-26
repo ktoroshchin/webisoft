@@ -8,21 +8,26 @@
     margin-top: 1em;
 }
 
-.vehicleForm_header {
+.vehicle_form_header {
     display: flex;
+    text-align: left;
 }
 
 .btn_continue {
     border-radius: 2em !important;
 }
 
-.vehicleForm {
-    width: 33%;
+.form_container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.vehicle_form {
+    width: 30%;
     background-color: #ffffff;
     border-radius: 2%;
     padding: 2em !important;
-    margin-top: 3em;
-    margin-bottom: 3em;
     box-shadow: 0 0 25px #ccc;
 }
 

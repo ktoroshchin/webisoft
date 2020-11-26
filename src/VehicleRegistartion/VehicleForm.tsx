@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Button, Checkbox, CheckboxProps, DropdownProps, Form, Grid, InputOnChangeData, Segment } from 'semantic-ui-react'
+import { Button, Checkbox, CheckboxProps, DropdownProps, Form, InputOnChangeData, Segment } from 'semantic-ui-react'
 import './VehicleForm.css'
 import { IndexableObject } from './VehicleRegistration'
 
@@ -25,7 +25,11 @@ interface IVehicleFormProps {
 export const VehicleForm = (props: IVehicleFormProps): React.ReactElement => {
   const { items, onClick, vehicleData } = props
 
-  const validateFields = (data: IndexableObject): boolean => {
+  /**
+   * Functions check if fields are not empty
+   * @param data Form data
+   */
+  const isButtonDisabled = (data: IndexableObject): boolean => {
     let disabled = true
     for (const property in data) {
       if(data[property]) {
@@ -81,14 +85,14 @@ export const VehicleForm = (props: IVehicleFormProps): React.ReactElement => {
   }
 
   return (
-    <Grid centered>
-      <Form className='vehicleForm'>
-        <h4 className='vehicleForm_header'>Tell us about your vehicle</h4>
+    <div className='form_container'>
+      <Form className='vehicle_form'>
+        <h4 className='vehicle_form_header'>Tell us about your vehicle</h4>
         {renderFields(items)}
         <div className='btn-container'>
-          <Button disabled={validateFields(vehicleData)} onClick={onClick} className='btn_continue' color='teal'>CONTINUE</Button>
+          <Button disabled={isButtonDisabled(vehicleData)} onClick={onClick} className='btn_continue' color='teal'>CONTINUE</Button>
         </div>
       </Form>
-    </Grid>
+    </div>
   )
 }
